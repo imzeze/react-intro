@@ -1,2 +1,1 @@
-# react-intro
-build a simple app
+Build a Simple App 
