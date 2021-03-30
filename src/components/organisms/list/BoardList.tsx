@@ -1,4 +1,3 @@
-import React from 'react'
 import styled from 'styled-components'
 import { BoardProps } from '../../../types/models'
 import { Flex } from '../../atoms'
@@ -10,11 +9,9 @@ type BoardListDataType = {
 
 const BoardList = ({ list }: BoardListDataType) => {
   return (
-    <View direction='column'>
+    <View direction="column">
       {list.map((item) => {
-        return (
-          <BoardListItem item={item} key={item.id} />
-        )
+        return <BoardListItem item={item} key={item.id} />
       })}
     </View>
   )
@@ -23,7 +20,11 @@ const BoardList = ({ list }: BoardListDataType) => {
 export default BoardList
 
 const View = styled(Flex)`
-  margin: 0 auto; 
-  width: 50%;
+  margin: 0 auto;
+  width: 100%;
   background: #dedede;
+
+  > div {
+    cursor: pointer;
+  }
 `

@@ -1,18 +1,22 @@
-import React from 'react'
-import { BoardList } from '../../organisms'
+import styled from 'styled-components'
+import { Flex } from '../../atoms'
+import { BoardList, Nav } from '../../organisms'
 
 const BoardListTemplate = () => {
   return (
-    <div>
-      <div>게시판</div>
-      <div>
-        <BoardList list={boardList} />
-      </div>
-    </div>
+    <Layout direction="column">
+      <Nav />
+      <span>게시판 목록</span>
+      <BoardList list={boardList} />
+    </Layout>
   )
 }
 
 export default BoardListTemplate
+
+const Layout = styled(Flex)`
+  background: yellow;
+`
 
 const boardList = [
   {
