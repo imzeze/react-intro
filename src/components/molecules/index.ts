@@ -1,0 +1,1 @@
+export {default as BoardListItem} from './item/BoardListItem'

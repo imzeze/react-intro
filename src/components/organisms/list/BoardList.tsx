@@ -1,5 +1,8 @@
 import React from 'react'
+import styled from 'styled-components'
 import { BoardProps } from '../../../types/models'
+import { Flex } from '../../atoms'
+import { BoardListItem } from '../../molecules'
 
 type BoardListDataType = {
   list: BoardProps[]
@@ -7,17 +10,20 @@ type BoardListDataType = {
 
 const BoardList = ({ list }: BoardListDataType) => {
   return (
-    <div>
+    <View direction='column'>
       {list.map((item) => {
         return (
-          <div key={item.id}>
-            <div>{item.title}</div>
-            <div>{item.contents}</div>
-          </div>
+          <BoardListItem item={item} key={item.id} />
         )
       })}
-    </div>
+    </View>
   )
 }
 
 export default BoardList
+
+const View = styled(Flex)`
+  margin: 0 auto; 
+  width: 50%;
+  background: #dedede;
+`
