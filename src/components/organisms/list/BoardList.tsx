@@ -20,9 +20,8 @@ const BoardList = ({ list }: BoardListDataType) => {
 export default BoardList
 
 const View = styled(Flex)`
-  margin: 0 auto;
-  width: 100%;
-  background: #dedede;
+  margin: 50px auto;
+  width: 70%;
 
   > div {
     cursor: pointer;

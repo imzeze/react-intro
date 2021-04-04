@@ -15,7 +15,7 @@ const BoardListTemplate = () => {
 export default BoardListTemplate
 
 const Layout = styled(Flex)`
-  background: yellow;
+  padding: 20px
 `
 
 const boardList = [
