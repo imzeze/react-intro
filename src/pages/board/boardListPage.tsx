@@ -1,5 +1,7 @@
-const BoardList = () => {
-  return <div></div>
+import { BoardListTemplate } from '../../components/templates'
+
+const BoardListPage = () => {
+  return <BoardListTemplate />
 }
 
-export default BoardList
+export default BoardListPage

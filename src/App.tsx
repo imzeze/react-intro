@@ -1,11 +1,11 @@
 import React from 'react'
-import { BoardListTemplate } from './components/templates'
+import { Router } from './pages/Roter'
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <BoardListTemplate />
+        <Router />
       </header>
     </div>
   )

@@ -18,10 +18,5 @@ const Nav = () => {
 export default Nav
 
 const CustomNav = styled(NavLink)`
-  width: 100%;
-  margin: 20px;
-
-  > div {
-    padding: 20px;
-  }
+  margin: 20px 20px 40px;
 `
